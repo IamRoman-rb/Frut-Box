@@ -1,0 +1,38 @@
+@import "variables";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $Karla;
+    background-color: $white;
+    overflow-x: hidden;
+    ::-webkit-scrollbar{
+        width: .3rem;
+        background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: $secundary-color;
+        border-radius: 1rem;
+    }
+}
+body::-webkit-scrollbar{
+    width: .6rem;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $primary-color;
+    border-radius: 1rem;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, i::selection, button::selection, span::selection{
+    background-color: $secundary-color;
+    color: $white;
+}
+img::selection{
+    background-color: transparent;
+}

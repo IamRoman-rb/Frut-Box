@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  background-color: #FFFF;
+  overflow-x: hidden;
+}
+body ::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: transparent;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #F2B705;
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFF278;
+  border-radius: 1rem;
+}
+
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, i::-moz-selection, button::-moz-selection, span::-moz-selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, i::selection, button::selection, span::selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+img::-moz-selection {
+  background-color: transparent;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+main#register {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 10vh;
+}
+main#register section#sectionRegister {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 2rem;
+}
+main#register section#sectionRegister figure {
+  width: 70%;
+  text-align: center;
+}
+main#register section#sectionRegister figure img {
+  width: 80%;
+}
+main#register section#sectionRegister h1 {
+  width: 100%;
+  text-align: center;
+  color: #2C2221;
+  font-family: "Lobster";
+  margin: 1rem 0;
+}
+main#register section#sectionRegister form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  background-color: #FFFF;
+}
+main#register section#sectionRegister form label {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #2C2221;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+main#register section#sectionRegister form label i, main#register section#sectionRegister form label span, main#register section#sectionRegister form label button {
+  width: 10%;
+  height: 100%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C2221;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s ease;
+}
+main#register section#sectionRegister form label button:hover i {
+  cursor: pointer;
+  color: #F2B705;
+}
+main#register section#sectionRegister form label input {
+  width: 70%;
+  height: 100%;
+  outline: none;
+  border: none;
+  margin: 0 0.5rem;
+  background-color: transparent;
+}
+main#register section#sectionRegister form section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+main#register section#sectionRegister form section button {
+  background-color: #FFF278;
+  color: #2C2221;
+  font-family: "Lobster";
+  padding: 0.5rem 1.3rem;
+  border: 2px solid #FFF278;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+main#register section#sectionRegister form section button:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+main#register article#redirect {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+main#register article#redirect p {
+  font-size: 1.2rem;
+  color: #2C2221;
+}
+main#register article#redirect p a {
+  background-color: #FFF278;
+  color: #2C2221;
+  font-family: "Lobster";
+  border: 2px solid #FFF278;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+main#register article#redirect p a:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  main#register section#sectionRegister figure, main#register section#sectionRegister form {
+    width: 50%;
+  }
+  main#register section#sectionRegister h1 {
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=register.css.map */

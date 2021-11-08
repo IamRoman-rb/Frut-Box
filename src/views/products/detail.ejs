@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head") %> 
+<body>
+    <%- include("../partials/header") %> 
+    <main id="detail">
+        <section id="product">
+            <article>
+                <figure>
+                    <img src="/assets/img/Pasa_de_uva-removebg-preview.png" alt="">
+                </figure>
+                <section id="info">
+                    <h1>Pasa de Uva</h1>
+                    <h2>$350</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sapiente vero quo quis repudiandae aspernatur assumenda deserunt odit officia eos, neque alias voluptate dolore qui velit voluptates delectus nemo iste!</p>
+                </section>
+                <section id="buttons">
+                    <button><i class="fas fa-dollar-sign"></i></button>
+                    <button><i class="fas fa-cart-plus"></i></button>
+                </section>
+            </article>
+            <h1 class="title">Productos Recomendados</h1>
+            <section class="slider">
+                <article class="product">
+                    <a href="/detail">
+                    <figure>
+                        <img src=" /assets/img/Pasa_de_uva-removebg-preview.png">
+                    </figure>
+                    <section id="info">
+                        <h2>Pasa de Uva</h2>
+                        <h3>$350</h3>
+                    </section>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="/detail">
+                    <figure>
+                        <img src=" /assets/img/Pasa_de_uva-removebg-preview.png">
+                    </figure>
+                    <section id="info">
+                        <h2>Pasa de Uva</h2>
+                        <h3>$350</h3>
+                    </section>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="/detail">
+                    <figure>
+                        <img src=" /assets/img/Pasa_de_uva-removebg-preview.png">
+                    </figure>
+                    <section id="info">
+                        <h2>Pasa de Uva</h2>
+                        <h3>$350</h3>
+                    </section>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="/detail">
+                    <figure>
+                        <img src=" /assets/img/Pasa_de_uva-removebg-preview.png">
+                    </figure>
+                    <section id="info">
+                        <h2>Pasa de Uva</h2>
+                        <h3>$350</h3>
+                    </section>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="/detail">
+                    <figure>
+                        <img src=" /assets/img/Pasa_de_uva-removebg-preview.png">
+                    </figure>
+                    <section id="info">
+                        <h2>Pasa de Uva</h2>
+                        <h3>$350</h3>
+                    </section>
+                    </a>
+                </article>
+                <article class="product">
+                    <a href="/detail">
+                    <figure>
+                        <img src=" /assets/img/Pasa_de_uva-removebg-preview.png">
+                    </figure>
+                    <section id="info">
+                        <h2>Pasa de Uva</h2>
+                        <h3>$350</h3>
+                    </section>
+                    </a>
+                </article>
+            </section>
+        </section>
+        <section id="comments">
+            <h1 class="title">Comments</h1>
+            <form>
+                <label>
+                    <textarea></textarea>
+                    <button><i class="fas fa-share"></i></button>
+                </label>
+            </form>
+            <% for( let index = 0; index < 10; index++ ) { %>
+                <article class="comment">
+                    <h1>Pepe</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat impedit minima vero ad et delectus perspiciatis perferendis quasi incidunt enim?</p>
+                        <form>
+                            <label for=""><input type="radio" name="<%= "comentario" + index %>" class="radio Like" value="like"><i class="far fa-thumbs-up"></i></label>
+                            <label for=""><input type="radio" name="<%= "comentario" + index %>" class="radio ThisLike" value="disLike"><i class="far fa-thumbs-down"></i></label>
+                        </form>
+                </article>
+            <% } %>
+        </section>
+        <%- include("../partials/bar") %> 
+    </main>
+    <%- include("../partials/footer") %> 
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/635914e016.js" crossorigin="anonymous"></script>
+    <script src=" /js/slider.js"></script>
+    <script src="/js/styles.js"></script>
+</body>
+</html>

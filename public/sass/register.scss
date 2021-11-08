@@ -1,0 +1,131 @@
+@import "variables";
+@import "body";
+main#register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 10vh;
+    section#sectionRegister{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 2rem;
+        figure{
+            width: 70%;
+            text-align: center;
+            img{
+                width: 80%;
+            }
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+            color: $black;
+            font-family: $Lobster;
+            margin: 1rem 0;
+
+        }
+        form{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            border-radius: .2rem;
+            box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .2);
+            background-color: $white;
+            label{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1rem 0;
+                padding: .5rem;
+                border: 1px solid $black;
+                border-radius: .2rem;
+                box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
+                transition: all .5s ease;
+                i, span, button{
+                    width: 10%;
+                    height: 100%;
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $black;
+                    background-color: transparent;
+                    border: none;
+                    transition: all .5s ease;
+                }
+                button:hover i{
+                    cursor: pointer;
+                    color: $secundary-color;
+                }
+                input{
+                    width: 70%;
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    margin: 0 .5rem;
+                    background-color: transparent;
+                }
+            }
+            section{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem 0;
+                button{
+                    background-color: $primary-color;
+                    color: $black;
+                    font-family: $Lobster;
+                    padding: .5rem 1.3rem;
+                    border: 2px solid $primary-color;
+                    border-radius: .2rem;
+                    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .1);
+                    cursor: pointer;
+                    transition: all .5s ease;
+                }
+                button:hover{
+                    box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .2);
+                }
+            }
+        }
+    }
+    article#redirect{
+        width: 100%;
+        text-align: center;
+        margin: 1rem;
+        p{
+            font-size: 1.2rem;
+            color: $black;
+            a{
+                background-color: $primary-color;
+                color: $black;
+                font-family: $Lobster;
+                border: 2px solid $primary-color;
+                padding: .2rem .8rem;
+                border-radius: .2rem;
+                box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .1);
+                transition: all .3s ease-in-out;
+            }
+            a:hover{
+                box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .2);
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        section#sectionRegister{
+            figure, form{
+                width: 50%;
+            }
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

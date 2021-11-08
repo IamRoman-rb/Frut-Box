@@ -1,0 +1,88 @@
+@import "variables";
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+    padding-bottom: 10vh;
+    background-color: #FFF550;
+    article{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        a{
+            margin: 0 1rem;
+            color: $black;
+            i{
+                transition: all .6s ease;
+                font-size: 1.5rem;
+            }
+        }
+        a:hover i{
+            transform: scale(1.03) translateY(-1rem);
+        }
+        form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            label{
+                width: 40%;
+                height: 40%;
+                display: flex;
+                justify-content: space-between;
+                padding: .5rem;
+                border: 1px solid $black;
+                border-radius: .2rem;
+                background-color: $white;
+                box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .1);
+                input{
+                    width: 85%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    width: 10%;
+                    background-color: transparent;
+                    font-size: 1rem;
+                    margin-left: .5rem;
+                    color: $black;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    article:nth-child(2) i{
+        color: $black;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    p{
+        color: $black;
+        span{
+            color: $secundary-color;
+            font-weight: 700;
+            margin: 0 .5rem 0 0;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 1rem;
+        article{
+            width: 30%;
+            form{
+                label{
+                    width: 80%;
+                }
+            }
+            
+        }
+    }
+}

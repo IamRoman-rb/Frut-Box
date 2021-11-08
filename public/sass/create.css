@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  background-color: #FFFF;
+  overflow-x: hidden;
+}
+body ::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: transparent;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #F2B705;
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFF278;
+  border-radius: 1rem;
+}
+
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, i::-moz-selection, button::-moz-selection, span::-moz-selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, i::selection, button::selection, span::selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+img::-moz-selection {
+  background-color: transparent;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+main#create {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 10vh;
+}
+main#create section#cardCreat {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #F2F2F2;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+main#create section#cardCreat form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+main#create section#cardCreat form section#photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+main#create section#cardCreat form section#photo article#img {
+  width: 80%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFF;
+  border: 0.2rem dashed #2C2221;
+  border-radius: 0.2rem;
+  margin: 1rem 0;
+}
+main#create section#cardCreat form section#photo article#img i {
+  font-size: 2.3rem;
+  color: #2C2221;
+}
+main#create section#cardCreat form section#photo label#imgButton {
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF278;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+main#create section#cardCreat form section#photo label#imgButton input {
+  visibility: hidden;
+}
+main#create section#cardCreat form section#photo label#imgButton h3 {
+  position: absolute;
+  font-size: 1.3rem;
+  font-family: "Lobster";
+  color: #2C2221;
+}
+main#create section#cardCreat form section#photo label#imgButton:hover {
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+main#create section#cardCreat form section#forms {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+main#create section#cardCreat form section#forms label.forms {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.4rem;
+  background-color: #FFFF;
+  border: 1px solid #2C2221;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+main#create section#cardCreat form section#forms label.forms i, main#create section#cardCreat form section#forms label.forms button, main#create section#cardCreat form section#forms label.forms span {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C2221;
+}
+main#create section#cardCreat form section#forms label.forms input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+main#create section#cardCreat form section#forms label.forms button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+main#create section#cardCreat form section#forms label.forms button i {
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+main#create section#cardCreat form section#forms label.forms button:hover i {
+  color: #F2B705;
+}
+main#create section#cardCreat form section#forms h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 1.3rem;
+  color: #2C2221;
+  margin: 0.5rem 0;
+}
+main#create section#cardCreat form section#forms textarea {
+  width: 80%;
+  height: 20vh;
+  padding: 1rem;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+main#create section#cardCreat form section#forms article#offert {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 0;
+}
+main#create section#cardCreat form section#forms article#offert h2 {
+  font-family: "Lobster";
+  font-size: 1.2rem;
+  color: #2C2221;
+  margin: 0 0.5rem 0 0;
+}
+main#create section#cardCreat form section#forms article#offert label {
+  width: 30%;
+  padding: 0.4rem;
+  background-color: #FFFF;
+  border: 1px solid #2C2221;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+main#create section#cardCreat form section#forms article#offert label input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+main#create section#cardCreat form section#forms section#buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main#create section#cardCreat form section#forms section#buttons button {
+  padding: 0.3rem 0.8rem;
+  background-color: #FFF278;
+  color: #2C2221;
+  font-family: "Lobster";
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main#create section#cardCreat form section#forms section#buttons button:hover {
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  main#create section#cardCreat form section#photo, main#create section#cardCreat form section#forms {
+    width: 50%;
+    align-items: flex-start;
+  }
+  main#create section#cardCreat form section#photo article#img {
+    height: 45vh;
+  }
+  main#create section#cardCreat form section#forms section#buttons button {
+    padding: 0.5rem 1rem;
+  }
+}/*# sourceMappingURL=create.css.map */

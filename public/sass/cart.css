@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  background-color: #FFFF;
+  overflow-x: hidden;
+}
+body ::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: transparent;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #F2B705;
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFF278;
+  border-radius: 1rem;
+}
+
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, i::-moz-selection, button::-moz-selection, span::-moz-selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, i::selection, button::selection, span::selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+img::-moz-selection {
+  background-color: transparent;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+main#cart {
+  width: 100%;
+  padding-top: 10vh;
+}
+main#cart form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+main#cart form article.card {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #F2F2F2;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+main#cart form article.card a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+main#cart form article.card a figure {
+  width: 80%;
+  text-align: center;
+}
+main#cart form article.card a figure img {
+  width: 80%;
+}
+main#cart form article.card a section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0.5rem;
+}
+main#cart form article.card a section h1 {
+  font-size: 1.3rem;
+  font-family: "Lobster";
+  color: #2C2221;
+  margin: 0 0 0.5rem 0;
+}
+main#cart form article.card a section h2 {
+  font-size: 1.3rem;
+  font-family: "Lobster";
+  color: #2C2221;
+  margin: 0 0 0.5rem 0;
+}
+main#cart form article.card a section p {
+  color: #2C2221;
+  font-family: "Karla";
+  margin: 0.5rem 0;
+}
+main#cart form article.card a section fieldset {
+  width: 50%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  border: none;
+}
+main#cart form article.card a section fieldset button {
+  width: 20%;
+  height: 100%;
+  background-color: #FFF278;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main#cart form article.card a section fieldset button i {
+  color: #2C2221;
+}
+main#cart form article.card a section fieldset button:hover {
+  background-color: #F2B705;
+}
+main#cart form article.card a section fieldset label {
+  width: 60%;
+  height: 100%;
+}
+main#cart form article.card a section fieldset label input {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFF;
+  border: none;
+  outline: none;
+}
+main#cart form article.card a section article#buttonsCard {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+main#cart form article.card a section article#buttonsCard button {
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+main#cart form article.card a section article#buttonsCard button i {
+  color: #2C2221;
+  transition: all 0.2s ease;
+}
+main#cart form article.card a section article#buttonsCard button i:hover {
+  color: #F2B705;
+}
+main#cart form article.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+main#cart form section#buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+main#cart form section#buttons button {
+  padding: 0.3rem 0.8rem;
+  margin: 0 0.5rem;
+  font-family: "Lobster";
+  color: #2C2221;
+  background-color: #FFF278;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main#cart form section#buttons button:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  main#cart form article.card {
+    width: 40%;
+  }
+  main#cart form section#buttons button {
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main#cart form article.card {
+    width: 30%;
+  }
+}/*# sourceMappingURL=cart.css.map */

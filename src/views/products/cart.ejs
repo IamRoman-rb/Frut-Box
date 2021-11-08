@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head") %>
+<body>
+    <%- include("../partials/header") %>
+    <main id="cart">
+        <form>
+            <% for( let index = 0; index < 4; index++ ) { %>            
+                <article class="card">
+                    <a href="/detail">
+                    <figure>
+                        <img src="/assets/img/Pasa_de_uva-removebg-preview.png" alt="">
+                    </figure>
+                    <section>
+                        <h1>Pasa de uva</h1>
+                        <h2>$350</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi dolore beatae nemo rem corporis dolores voluptatum hic magni veniam nesciunt, harum rerum ab mollitia deleniti aut tempora? Vel, porro cumque.</p>
+                        <fieldset>
+                            <button><i class="fas fa-minus"></i></button>
+                        <label>
+                            </button><input type="number" min="1">
+                        </label>
+                            <button><i class="fas fa-plus"></i></button>
+                        </fieldset>
+                        <article id="buttonsCard">
+                            <button><i class="fas fa-dollar-sign"></i></button>
+                            <button><i class="far fa-trash-alt"></i></button>
+                        </article>
+                    </section>
+                    </a>
+                </article>
+            <% } %>
+            <section id="buttons">
+                <button>Eliminar todo</button>
+                <button>Comprar todo</button>
+            </section>
+        </form>
+        <%- include("../partials/bar") %>
+    </main>
+    <%- include("../partials/footer") %>
+    <script src="https://kit.fontawesome.com/635914e016.js" crossorigin="anonymous"></script>
+    <script src="/js/styles.js"></script>
+</body>
+</html>

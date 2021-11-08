@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head") %> 
+<body>
+    <%- include("../partials/header") %> 
+    <main id="register">
+        <section id="sectionRegister">
+            <figure>
+                <img src="/assets/img/Logo frut-box.png" alt="">
+            </figure>
+            <form>
+                <h1>Sing-Up</h1>
+                <label><i class="fas fa-user"></i><input type="text"><span></span></label>
+                <label><i class="fas fa-envelope"></i><input type="email"><span></span></label>
+                <label><i class="fas fa-lock"></i><input type="password" class="password"><button class="btn-eye"><i class="fas fa-eye"></i></button></label>
+                <label><i class="fas fa-lock"></i><input type="password" class="password"><button class="btn-eye"><i class="fas fa-eye"></i></button></label>
+                <section>
+                    <button type="submit">Sing-Up</button>
+                </section>
+            </form>
+        </section>
+        <article id="redirect">
+            <p>Si ya tenes una cuenta <a href="/login">Log-In</a></p>
+        </article>
+        <%- include("../partials/bar") %> 
+    </main>
+    <%- include("../partials/footer") %> 
+    <script src="https://kit.fontawesome.com/635914e016.js" crossorigin="anonymous"></script>
+    <script src=" /js/styles.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  background-color: #FFFF;
+  overflow-x: hidden;
+}
+body ::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: transparent;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #F2B705;
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFF278;
+  border-radius: 1rem;
+}
+
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection, i::-moz-selection, button::-moz-selection, span::-moz-selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, i::selection, button::selection, span::selection {
+  background-color: #F2B705;
+  color: #FFFF;
+}
+
+img::-moz-selection {
+  background-color: transparent;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+main#login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 10vh;
+}
+main#login section#sectionLogin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 2rem;
+}
+main#login section#sectionLogin figure {
+  width: 70%;
+  text-align: center;
+}
+main#login section#sectionLogin figure img {
+  width: 80%;
+}
+main#login section#sectionLogin form {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0.2rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+}
+main#login section#sectionLogin form h1 {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Lobster";
+  text-align: center;
+  color: #2C2221;
+  margin: 1rem 0;
+}
+main#login section#sectionLogin form label {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #2C2221;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+main#login section#sectionLogin form label i, main#login section#sectionLogin form label span, main#login section#sectionLogin form label button {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C2221;
+  transition: all 0.5s ease;
+}
+main#login section#sectionLogin form label input {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+main#login section#sectionLogin form label button {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+main#login section#sectionLogin form label button:hover i {
+  color: #F2B705;
+}
+main#login section#sectionLogin form section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+main#login section#sectionLogin form section button {
+  background-color: #FFF278;
+  color: #2C2221;
+  border: 2px solid #FFF278;
+  font-family: "Lobster";
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+main#login section#sectionLogin form section button:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+main#login article {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+main#login article p {
+  font-size: 1.3rem;
+  color: #2C2221;
+}
+main#login article p a {
+  padding: 0.2rem 0.8rem;
+  background-color: #FFF278;
+  color: #2C2221;
+  border: 2px solid #FFF278;
+  font-family: "Lobster";
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+main#login article p a:hover {
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  main#login section#sectionLogin figure, main#login section#sectionLogin form {
+    width: 45%;
+  }
+  main#login section#sectionLogin figure h1, main#login section#sectionLogin form h1 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=login.css.map */

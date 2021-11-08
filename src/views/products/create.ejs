@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head") %>
+<body>
+    <%- include("../partials/header") %>
+    <main id="create">
+        <section id="cardCreat">
+            <form>
+                <section id="photo">
+                    <article id="img">
+                        <i class="fas fa-image"></i>
+                    </article>
+                    <label id="imgButton">
+                        <input type="file"><h3>Img</h3>
+                    </label>
+                </section>
+                <section id="forms">
+                    <h1>Datos del producto</h1>
+                    <label class="forms">
+                        <i class="fas fa-user"></i><input type="text"><span></span>
+                    </label>
+                    <label class="forms">
+                        <i class="fas fa-dollar-sign"></i><input type="number"><span></span>
+                    </label>
+                    <h1>Descripcion del producto</h1>
+                    <textarea></textarea>
+                    <article id="offert">
+                        <h2>Oferta</h2>
+                        <label>
+                            <input type="number" min="0">
+                        </label>
+                    </article>
+                    <section id="buttons">
+                        <button type="reset">Reiniciar</button>
+                        <button type="submit">Crear</button>
+                    </section>
+                </section>
+            </form>
+        </section>
+        <%- include("../partials/bar") %>
+    </main>
+    <%- include("../partials/footer") %>
+    <script src="https://kit.fontawesome.com/635914e016.js" crossorigin="anonymous"></script>
+    <script src="/js/styles.js"></script>
+</body>
+</html>

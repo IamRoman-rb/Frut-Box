@@ -1,0 +1,51 @@
+@import "variables";
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 242, 120, .3);
+    box-shadow: 0 .2rem .3rem rgba(83, 68, 68, 0.2);
+    z-index: 10;
+    transition: all .5s ease;
+    button{
+        display: none;
+        font-size: 1.5rem;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 10;
+    }
+    figure{
+        width: 5.5rem;
+        height: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 80%;
+            height: 80%;
+            z-index: 10;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+        padding: 2rem;
+        figure{
+            width: 5rem;
+            height: 5rem;
+        }
+        button{
+            display: flex;
+        }
+    }
+}
+.solid{
+    background-color: $white;
+}

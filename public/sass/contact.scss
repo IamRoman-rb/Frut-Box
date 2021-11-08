@@ -1,0 +1,121 @@
+@import "variables";
+@import "body";
+main#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    article{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        figure{
+            width: 80%;
+            text-align: center;
+            img{
+                width: 100%;
+            }
+        }
+        form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            padding: 1rem;
+            margin: 1rem 0;
+            background-color: $grey;
+            border-radius: .2rem;
+            box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .2);
+            h1{
+                width: 100%;
+                text-align: center;
+                margin: 1rem 0;
+                color: $black;
+                font-family: $Lobster;
+                font-size: 1.3rem;
+            }
+            label{
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: .3rem;
+                margin: 1rem 0;
+                background-color: $white;
+                border: 1px solid $black;
+                border-radius: .2rem;
+                box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .1);
+                i{
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $black;
+                    font-size: .8rem;
+                }
+                input{
+                    width: 90%;
+                    margin: 0 .5rem;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+            }
+            textarea{
+                width: 80%;
+                height: 25vh;
+                border: none;
+                outline: none;
+                padding: 1rem;
+                border-radius: .2rem;
+                resize: none;
+                box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
+            }
+            section#buttons{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem 0;
+                button{
+                    padding: .3rem .8rem;
+                    border-radius: .2rem;
+                    background-color: $primary-color;
+                    color: $black;
+                    font-family: $Lobster;
+                    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .1);
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all .3s ease;
+                }
+                button:hover{
+                    box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .2);
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        article{
+            figure, form{
+                width: 50%;
+            }
+            form{
+                h1{
+                    font-size: 2.3rem;
+                }
+                textarea{
+                    height: 15vh;
+                }
+                section#buttons{
+                    button{
+                        padding: .5rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
