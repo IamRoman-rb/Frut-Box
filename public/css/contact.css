@@ -9,10 +9,12 @@ body {
   background-color: #FFFF;
   overflow-x: hidden;
 }
+
 body ::-webkit-scrollbar {
   width: 0.3rem;
   background-color: transparent;
 }
+
 body ::-webkit-scrollbar-thumb {
   background-color: #F2B705;
   border-radius: 1rem;
@@ -57,6 +59,7 @@ main#contact {
   justify-content: center;
   padding-top: 10vh;
 }
+
 main#contact article {
   width: 80%;
   display: flex;
@@ -64,13 +67,16 @@ main#contact article {
   align-items: center;
   flex-flow: row wrap;
 }
+
 main#contact article figure {
   width: 80%;
   text-align: center;
 }
+
 main#contact article figure img {
   width: 100%;
 }
+
 main#contact article form {
   width: 100%;
   display: flex;
@@ -83,6 +89,7 @@ main#contact article form {
   border-radius: 0.2rem;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
 }
+
 main#contact article form h1 {
   width: 100%;
   text-align: center;
@@ -91,6 +98,7 @@ main#contact article form h1 {
   font-family: "Lobster";
   font-size: 1.3rem;
 }
+
 main#contact article form label {
   width: 80%;
   display: flex;
@@ -103,6 +111,7 @@ main#contact article form label {
   border-radius: 0.2rem;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
+
 main#contact article form label i {
   width: 10%;
   display: flex;
@@ -111,6 +120,7 @@ main#contact article form label i {
   color: #2C2221;
   font-size: 0.8rem;
 }
+
 main#contact article form label input {
   width: 90%;
   margin: 0 0.5rem;
@@ -118,6 +128,7 @@ main#contact article form label input {
   border: none;
   outline: none;
 }
+
 main#contact article form textarea {
   width: 80%;
   height: 25vh;
@@ -128,6 +139,7 @@ main#contact article form textarea {
   resize: none;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
+
 main#contact article form section#buttons {
   width: 100%;
   display: flex;
@@ -135,6 +147,7 @@ main#contact article form section#buttons {
   align-items: center;
   margin: 1rem 0;
 }
+
 main#contact article form section#buttons button {
   padding: 0.3rem 0.8rem;
   border-radius: 0.2rem;
@@ -147,20 +160,28 @@ main#contact article form section#buttons button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 main#contact article form section#buttons button:hover {
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
 }
+
 @media screen and (min-width: 768px) {
   main#contact article figure, main#contact article form {
     width: 50%;
   }
+
   main#contact article form h1 {
     font-size: 2.3rem;
   }
+
   main#contact article form textarea {
     height: 15vh;
   }
+
   main#contact article form section#buttons button {
     padding: 0.5rem 1rem;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+/*# sourceMappingURL=contact.css.map */
+
+/*# sourceMappingURL=contact.css.map */

@@ -9,10 +9,12 @@ body {
   background-color: #FFFF;
   overflow-x: hidden;
 }
+
 body ::-webkit-scrollbar {
   width: 0.3rem;
   background-color: transparent;
 }
+
 body ::-webkit-scrollbar-thumb {
   background-color: #F2B705;
   border-radius: 1rem;
@@ -66,6 +68,7 @@ header {
   z-index: 10;
   transition: all 0.5s ease;
 }
+
 header button {
   display: none;
   font-size: 1.5rem;
@@ -75,6 +78,7 @@ header button {
   cursor: pointer;
   z-index: 10;
 }
+
 header figure {
   width: 5.5rem;
   height: 5.5rem;
@@ -82,25 +86,28 @@ header figure {
   justify-content: center;
   align-items: center;
 }
+
 header figure img {
   width: 80%;
   height: 80%;
   z-index: 10;
 }
+
 @media screen and (min-width: 768px) {
   header {
     justify-content: space-between;
     padding: 2rem;
   }
+
   header figure {
     width: 5rem;
     height: 5rem;
   }
+
   header button {
     display: flex;
   }
 }
-
 .solid {
   background-color: #FFFF;
 }
@@ -111,6 +118,7 @@ main#index {
   justify-content: center;
   flex-flow: row wrap;
 }
+
 main#index section#banner {
   width: 100%;
   height: 65vh;
@@ -124,6 +132,7 @@ main#index section#banner {
   background-attachment: fixed;
   position: relative;
 }
+
 main#index section#banner h1 {
   position: absolute;
   font-size: 3rem;
@@ -131,6 +140,7 @@ main#index section#banner h1 {
   color: #FFFF;
   text-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
 }
+
 main#index section#banner article {
   width: 100%;
   height: 150px;
@@ -139,6 +149,7 @@ main#index section#banner article {
   left: 0;
   overflow: hidden;
 }
+
 main#index section#filters {
   width: 100%;
   display: flex;
@@ -147,6 +158,7 @@ main#index section#filters {
   flex-flow: row wrap;
   margin: 1rem 0;
 }
+
 main#index section#filters a {
   color: #FFFF;
   background-color: #80B829;
@@ -156,15 +168,18 @@ main#index section#filters a {
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
 main#index section#filters a:hover {
   background-color: #2C7F23;
   transform: scale(1.03) translateY(-0.2rem);
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
+
 main#index section#products {
   width: 100%;
   margin: 1rem 0;
 }
+
 main#index section#products h1 {
   width: 100%;
   text-align: center;
@@ -173,6 +188,7 @@ main#index section#products h1 {
   color: #2C2221;
   margin: 1rem 0;
 }
+
 main#index section#products article.slider {
   width: 90%;
   display: flex;
@@ -180,6 +196,7 @@ main#index section#products article.slider {
   align-items: center;
   padding: 0.5rem;
 }
+
 main#index section#products article.slider article.product {
   width: 100%;
   background-color: #F2F2F2;
@@ -190,55 +207,64 @@ main#index section#products article.slider article.product {
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
 main#index section#products article.slider article.product a {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 main#index section#products article.slider article.product a figure {
   width: 80%;
   height: 70%;
   text-align: center;
 }
+
 main#index section#products article.slider article.product a figure img {
   width: 100%;
   height: 100%;
 }
+
 main#index section#products article.slider article.product a section#info {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 main#index section#products article.slider article.product a section#info h2 {
   font-size: 1rem;
   font-family: "Lobster";
   color: #2C2221;
 }
+
 main#index section#products article.slider article.product a section#info h3 {
   font-size: 1rem;
   color: #2C2221;
 }
+
 main#index section#products article.product:hover {
   transform: scale(1.03) translateY(-0.5rem);
 }
+
 @media screen and (min-width: 1200px) {
   main#index section#filters {
     width: 20%;
     justify-content: center;
     align-items: flex-start;
   }
+
   main#index section#filters a {
     width: 50%;
     text-align: center;
     margin: 1rem;
   }
+
   main#index section#products {
     width: 80%;
   }
 }
-
 footer {
   width: 100%;
   display: flex;
@@ -249,6 +275,7 @@ footer {
   padding-bottom: 10vh;
   background-color: #FFF550;
 }
+
 footer article {
   width: 100%;
   display: flex;
@@ -256,23 +283,28 @@ footer article {
   align-items: center;
   margin: 1rem 0;
 }
+
 footer article a {
   margin: 0 1rem;
   color: #2C2221;
 }
+
 footer article a i {
   transition: all 0.6s ease;
   font-size: 1.5rem;
 }
+
 footer article a:hover i {
   transform: scale(1.03) translateY(-1rem);
 }
+
 footer article form {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer article form label {
   width: 40%;
   height: 40%;
@@ -284,12 +316,14 @@ footer article form label {
   background-color: #FFFF;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
+
 footer article form label input {
   width: 85%;
   height: 100%;
   border: none;
   outline: none;
 }
+
 footer article form label button {
   width: 10%;
   background-color: transparent;
@@ -300,27 +334,36 @@ footer article form label button {
   outline: none;
   cursor: pointer;
 }
+
 footer article:nth-child(2) i {
   color: #2C2221;
   font-size: 1.5rem;
   margin: 0 1rem;
 }
+
 footer p {
   color: #2C2221;
 }
+
 footer p span {
   color: #F2B705;
   font-weight: 700;
   margin: 0 0.5rem 0 0;
 }
+
 @media screen and (min-width: 768px) {
   footer {
     padding-bottom: 1rem;
   }
+
   footer article {
     width: 30%;
   }
+
   footer article form label {
     width: 80%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */

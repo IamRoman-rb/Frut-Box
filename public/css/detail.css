@@ -9,10 +9,12 @@ body {
   background-color: #FFFF;
   overflow-x: hidden;
 }
+
 body ::-webkit-scrollbar {
   width: 0.3rem;
   background-color: transparent;
 }
+
 body ::-webkit-scrollbar-thumb {
   background-color: #F2B705;
   border-radius: 1rem;
@@ -58,16 +60,19 @@ main#detail {
   flex-flow: row wrap;
   padding-top: 10vh;
 }
+
 main#detail section#product, main#detail section.slider, main#detail section#comments {
   width: 100%;
   margin: 1rem;
 }
+
 main#detail section#product {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
 main#detail section#product article {
   width: 80%;
   display: flex;
@@ -78,13 +83,16 @@ main#detail section#product article {
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
   background-color: #F2F2F2;
 }
+
 main#detail section#product article figure {
   width: 80%;
   text-align: center;
 }
+
 main#detail section#product article figure img {
   width: 100%;
 }
+
 main#detail section#product article section#info {
   width: 100%;
   display: flex;
@@ -93,23 +101,28 @@ main#detail section#product article section#info {
   flex-flow: row wrap;
   padding: 0.5rem;
 }
+
 main#detail section#product article section#info h1 {
   font-size: 1.5rem;
   font-family: "Lobster";
   color: #2C2221;
 }
+
 main#detail section#product article section#info h2 {
   color: #2C2221;
 }
+
 main#detail section#product article section#info p {
   margin: 0.5rem 0;
 }
+
 main#detail section#product article section#buttons {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 main#detail section#product article section#buttons button {
   margin: 0 0.5rem;
   background-color: transparent;
@@ -117,14 +130,17 @@ main#detail section#product article section#buttons button {
   outline: none;
   cursor: pointer;
 }
+
 main#detail section#product article section#buttons button i {
   font-size: 1.3rem;
   color: #2C2221;
   transition: all 0.2s ease;
 }
+
 main#detail section#product article section#buttons button:hover i {
   color: #F2B705;
 }
+
 main#detail section#product h1.title {
   width: 100%;
   text-align: center;
@@ -133,6 +149,7 @@ main#detail section#product h1.title {
   color: #2C2221;
   margin: 1rem 0;
 }
+
 main#detail section#product section.slider {
   width: 90%;
   display: flex;
@@ -140,6 +157,7 @@ main#detail section#product section.slider {
   align-items: center;
   padding: 0.5rem;
 }
+
 main#detail section#product section.slider article.product {
   width: 100%;
   background-color: #F2F2F2;
@@ -150,45 +168,54 @@ main#detail section#product section.slider article.product {
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
 main#detail section#product section.slider article.product a {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 main#detail section#product section.slider article.product a figure {
   width: 80%;
   height: 70%;
   text-align: center;
 }
+
 main#detail section#product section.slider article.product a figure img {
   width: 100%;
   height: 100%;
 }
+
 main#detail section#product section.slider article.product a section#info {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 main#detail section#product section.slider article.product a section#info h2 {
   font-size: 1rem;
   font-family: "Lobster";
   color: #2C2221;
 }
+
 main#detail section#product section.slider article.product a section#info h3 {
   font-size: 1rem;
   color: #2C2221;
 }
+
 main#detail section#product section.slider article.product:hover {
   transform: scale(1.03) translateY(-0.5rem);
 }
+
 main#detail section#comments {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
 main#detail section#comments h1.title {
   width: 100%;
   text-align: center;
@@ -197,15 +224,18 @@ main#detail section#comments h1.title {
   color: #2C2221;
   margin: 0.5rem 0;
 }
+
 main#detail section#comments form {
   width: 80%;
 }
+
 main#detail section#comments form label {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   flex-flow: row wrap;
 }
+
 main#detail section#comments form label textarea {
   width: 100%;
   height: 5rem;
@@ -216,6 +246,7 @@ main#detail section#comments form label textarea {
   outline: none;
   resize: none;
 }
+
 main#detail section#comments form label button {
   padding: 0.2rem 0.8rem;
   background-color: #FFF278;
@@ -224,12 +255,15 @@ main#detail section#comments form label button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 main#detail section#comments form label button i {
   color: #2C2221;
 }
+
 main#detail section#comments form label button:hover {
   background-color: #F2B705;
 }
+
 main#detail section#comments article.comment {
   width: 90%;
   display: flex;
@@ -242,6 +276,7 @@ main#detail section#comments article.comment {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
+
 main#detail section#comments article.comment h1 {
   width: 100%;
   font-size: 1.5rem;
@@ -249,6 +284,7 @@ main#detail section#comments article.comment h1 {
   color: #2C2221;
   margin: 0.5rem 0;
 }
+
 main#detail section#comments article.comment form {
   width: 100%;
   display: flex;
@@ -256,6 +292,7 @@ main#detail section#comments article.comment form {
   align-items: center;
   margin: 1rem 0;
 }
+
 main#detail section#comments article.comment form label {
   width: 3rem;
   display: flex;
@@ -263,43 +300,55 @@ main#detail section#comments article.comment form label {
   align-items: center;
   position: relative;
 }
+
 main#detail section#comments article.comment form label input {
   cursor: pointer;
   position: absolute;
   z-index: 2;
   opacity: 0;
 }
+
 main#detail section#comments article.comment form label i {
   position: absolute;
   font-size: 1.2rem;
   color: #2C2221;
 }
+
 main#detail section#comments article.comment:hover {
   background-color: #F2F2F2;
   box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
 }
+
 @media screen and (min-width: 768px) {
   main#detail section#product {
     width: 50%;
     align-items: flex-start;
     margin: 1rem 0;
   }
+
   main#detail section#product section.slider {
     align-items: flex-start;
   }
+
   main#detail section#product article {
     width: 70%;
   }
+
   main#detail section#product article figure {
     width: 60%;
   }
+
   main#detail section#product section.slider {
     width: 100%;
   }
+
   main#detail section#comments {
     width: 45%;
     height: 100vh;
     overflow-y: scroll;
   }
-}/*# sourceMappingURL=detail.css.map */
+}
+/*# sourceMappingURL=detail.css.map */
+
+/*# sourceMappingURL=detail.css.map */
