@@ -5,13 +5,13 @@
     <%- include("../partials/header") %>
     <main id="create">
         <section id="cardCreat">
-            <form>
+            <form method="post" action="/product/create" enctype="multipart/form-data">
                 <section id="photo">
                     <article id="img">
                         <i class="fas fa-image"></i>
                     </article>
                     <label id="imgButton">
-                        <input type="file"><h3>Img</h3>
+                        <input type="file" name="img"><h3>Img</h3>
                     </label>
                 </section>
                 <section id="forms">

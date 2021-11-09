@@ -18,12 +18,24 @@ app.set("views", path.resolve(__dirname, "./views"));
 const publichPath = path.resolve(__dirname, "../public");
 app.use(express.static(publichPath));
 
-// Middlewares
+// Module Middlewares
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
+app.use(methodOverride("_method"))
+app.use(cookie())
+app.use(session({
+    secret: "frut box", 
+    resave: false,
+saveUninitialized: true}))
 
 // Web Routes
 const main = require("./routers/main");
 app.use(main);
 const user = require("./routers/user");
-app.use(user);
+app.use("/user",user);
 const product = require("./routers/product");
-app.use(product);
+app.use("/product",product);
+const cart = require("./routers/cart");
+app.use("/cart",cart);
